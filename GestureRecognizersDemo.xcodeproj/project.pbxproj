@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F968612358AF3200738DB6 /* SelectDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F968602358AF3200738DB6 /* SelectDemoVC.swift */; };
+		03F968632358B2BC00738DB6 /* PinchGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F968622358B2BC00738DB6 /* PinchGestureVC.swift */; };
 		261A79352358A252009A5F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A79342358A252009A5F9F /* AppDelegate.swift */; };
 		261A79372358A252009A5F9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A79362358A252009A5F9F /* SceneDelegate.swift */; };
-		261A79392358A252009A5F9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A79382358A252009A5F9F /* ViewController.swift */; };
+		261A79392358A252009A5F9F /* TapGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A79382358A252009A5F9F /* TapGestureVC.swift */; };
 		261A793C2358A252009A5F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261A793A2358A252009A5F9F /* Main.storyboard */; };
 		261A793E2358A253009A5F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261A793D2358A253009A5F9F /* Assets.xcassets */; };
 		261A79412358A253009A5F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261A793F2358A253009A5F9F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		261A79312358A252009A5F9F /* TapGestureRecognizerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapGestureRecognizerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F968602358AF3200738DB6 /* SelectDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDemoVC.swift; sourceTree = "<group>"; };
+		03F968622358B2BC00738DB6 /* PinchGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchGestureVC.swift; sourceTree = "<group>"; };
+		261A79312358A252009A5F9F /* GestureRecognizersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureRecognizersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261A79342358A252009A5F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261A79362358A252009A5F9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		261A79382358A252009A5F9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		261A79382358A252009A5F9F /* TapGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureVC.swift; sourceTree = "<group>"; };
 		261A793B2358A252009A5F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		261A793D2358A253009A5F9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		261A79402358A253009A5F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,10 +41,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033119C32359A1DB00BA2274 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				03F968602358AF3200738DB6 /* SelectDemoVC.swift */,
+				261A79382358A252009A5F9F /* TapGestureVC.swift */,
+				03F968622358B2BC00738DB6 /* PinchGestureVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		033119C42359A1EF00BA2274 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				261A793A2358A252009A5F9F /* Main.storyboard */,
+				261A793F2358A253009A5F9F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		261A79282358A252009A5F9F = {
 			isa = PBXGroup;
 			children = (
-				261A79332358A252009A5F9F /* TapGestureRecognizerDemo */,
+				261A79332358A252009A5F9F /* GestureRecognizersDemo */,
 				261A79322358A252009A5F9F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +71,30 @@
 		261A79322358A252009A5F9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				261A79312358A252009A5F9F /* TapGestureRecognizerDemo.app */,
+				261A79312358A252009A5F9F /* GestureRecognizersDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		261A79332358A252009A5F9F /* TapGestureRecognizerDemo */ = {
+		261A79332358A252009A5F9F /* GestureRecognizersDemo */ = {
 			isa = PBXGroup;
 			children = (
+				033119C42359A1EF00BA2274 /* Views */,
+				033119C32359A1DB00BA2274 /* Controllers */,
 				261A79342358A252009A5F9F /* AppDelegate.swift */,
 				261A79362358A252009A5F9F /* SceneDelegate.swift */,
-				261A79382358A252009A5F9F /* ViewController.swift */,
-				261A793A2358A252009A5F9F /* Main.storyboard */,
 				261A793D2358A253009A5F9F /* Assets.xcassets */,
-				261A793F2358A253009A5F9F /* LaunchScreen.storyboard */,
 				261A79422358A253009A5F9F /* Info.plist */,
 			);
-			path = TapGestureRecognizerDemo;
+			path = GestureRecognizersDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		261A79302358A252009A5F9F /* TapGestureRecognizerDemo */ = {
+		261A79302358A252009A5F9F /* GestureRecognizersDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 261A79452358A253009A5F9F /* Build configuration list for PBXNativeTarget "TapGestureRecognizerDemo" */;
+			buildConfigurationList = 261A79452358A253009A5F9F /* Build configuration list for PBXNativeTarget "GestureRecognizersDemo" */;
 			buildPhases = (
 				261A792D2358A252009A5F9F /* Sources */,
 				261A792E2358A252009A5F9F /* Frameworks */,
@@ -82,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = TapGestureRecognizerDemo;
+			name = GestureRecognizersDemo;
 			productName = TapGestureRecognizerDemo;
-			productReference = 261A79312358A252009A5F9F /* TapGestureRecognizerDemo.app */;
+			productReference = 261A79312358A252009A5F9F /* GestureRecognizersDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 261A792C2358A252009A5F9F /* Build configuration list for PBXProject "TapGestureRecognizerDemo" */;
+			buildConfigurationList = 261A792C2358A252009A5F9F /* Build configuration list for PBXProject "GestureRecognizersDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				261A79302358A252009A5F9F /* TapGestureRecognizerDemo */,
+				261A79302358A252009A5F9F /* GestureRecognizersDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				261A79392358A252009A5F9F /* ViewController.swift in Sources */,
+				261A79392358A252009A5F9F /* TapGestureVC.swift in Sources */,
 				261A79352358A252009A5F9F /* AppDelegate.swift in Sources */,
+				03F968632358B2BC00738DB6 /* PinchGestureVC.swift in Sources */,
 				261A79372358A252009A5F9F /* SceneDelegate.swift in Sources */,
+				03F968612358AF3200738DB6 /* SelectDemoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +310,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7Z3QND73W;
-				INFOPLIST_FILE = TapGestureRecognizerDemo/Info.plist;
+				INFOPLIST_FILE = GestureRecognizersDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.boldlion.TapGestureRecognizerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.boldlion.GestureRecognizersDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,12 +328,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7Z3QND73W;
-				INFOPLIST_FILE = TapGestureRecognizerDemo/Info.plist;
+				INFOPLIST_FILE = GestureRecognizersDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.boldlion.TapGestureRecognizerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.boldlion.GestureRecognizersDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		261A792C2358A252009A5F9F /* Build configuration list for PBXProject "TapGestureRecognizerDemo" */ = {
+		261A792C2358A252009A5F9F /* Build configuration list for PBXProject "GestureRecognizersDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				261A79432358A253009A5F9F /* Debug */,
@@ -328,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		261A79452358A253009A5F9F /* Build configuration list for PBXNativeTarget "TapGestureRecognizerDemo" */ = {
+		261A79452358A253009A5F9F /* Build configuration list for PBXNativeTarget "GestureRecognizersDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				261A79462358A253009A5F9F /* Debug */,
