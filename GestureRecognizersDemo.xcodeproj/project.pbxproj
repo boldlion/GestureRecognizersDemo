@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03ACED6B2359E3F9008277A6 /* RotationGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ACED6A2359E3F9008277A6 /* RotationGestureVC.swift */; };
 		03F968612358AF3200738DB6 /* SelectDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F968602358AF3200738DB6 /* SelectDemoVC.swift */; };
 		03F968632358B2BC00738DB6 /* PinchGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F968622358B2BC00738DB6 /* PinchGestureVC.swift */; };
 		261A79352358A252009A5F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A79342358A252009A5F9F /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03ACED6A2359E3F9008277A6 /* RotationGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureVC.swift; sourceTree = "<group>"; };
 		03F968602358AF3200738DB6 /* SelectDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDemoVC.swift; sourceTree = "<group>"; };
 		03F968622358B2BC00738DB6 /* PinchGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchGestureVC.swift; sourceTree = "<group>"; };
 		261A79312358A252009A5F9F /* GestureRecognizersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureRecognizersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,7 @@
 				03F968602358AF3200738DB6 /* SelectDemoVC.swift */,
 				261A79382358A252009A5F9F /* TapGestureVC.swift */,
 				03F968622358B2BC00738DB6 /* PinchGestureVC.swift */,
+				03ACED6A2359E3F9008277A6 /* RotationGestureVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				261A79352358A252009A5F9F /* AppDelegate.swift in Sources */,
 				03F968632358B2BC00738DB6 /* PinchGestureVC.swift in Sources */,
 				261A79372358A252009A5F9F /* SceneDelegate.swift in Sources */,
+				03ACED6B2359E3F9008277A6 /* RotationGestureVC.swift in Sources */,
 				03F968612358AF3200738DB6 /* SelectDemoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

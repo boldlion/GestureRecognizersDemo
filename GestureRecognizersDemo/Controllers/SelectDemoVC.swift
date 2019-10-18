@@ -20,4 +20,9 @@ class SelectDemoVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func rotationGestureTapped(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "RotationGestureVC") as! RotationGestureVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
