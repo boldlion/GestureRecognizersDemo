@@ -25,4 +25,9 @@ class SelectDemoVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func panGestureDemo(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(identifier: "PanGestureVC") as! PanGestureVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
