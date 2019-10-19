@@ -30,4 +30,9 @@ class SelectDemoVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func swipeGestureDemo(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(identifier: "SwipeGestureVC") as! SwipeGestureVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

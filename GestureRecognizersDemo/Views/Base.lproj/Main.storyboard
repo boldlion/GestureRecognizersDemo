@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="GHt-6Y-IuJ">
-                                <rect key="frame" x="87" y="252.5" width="240" height="391"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="GHt-6Y-IuJ">
+                                <rect key="frame" x="87" y="263" width="240" height="370"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUL-u0-MFj">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
@@ -27,7 +27,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhN-lE-6wq">
-                                        <rect key="frame" x="0.0" y="119" width="240" height="34"/>
+                                        <rect key="frame" x="0.0" y="84" width="240" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="UIPinchGestureRecognizer"/>
                                         <connections>
@@ -35,7 +35,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KL-Rr-1Os">
-                                        <rect key="frame" x="0.0" y="238" width="240" height="34"/>
+                                        <rect key="frame" x="0.0" y="168" width="240" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="UIRotationGestureRecognizer"/>
                                         <connections>
@@ -43,11 +43,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbn-hN-Hjg">
-                                        <rect key="frame" x="0.0" y="357" width="240" height="34"/>
+                                        <rect key="frame" x="0.0" y="252" width="240" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="UIPanGestureRecognizer"/>
                                         <connections>
                                             <action selector="panGestureDemo:" destination="6gZ-3q-oAh" eventType="touchUpInside" id="xZH-KU-8O0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLt-pi-cQj">
+                                        <rect key="frame" x="0.0" y="336" width="240" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="UISwipeGestureRecognizer"/>
+                                        <connections>
+                                            <action selector="swipeGestureDemo:" destination="6gZ-3q-oAh" eventType="touchUpInside" id="T0B-mt-7sS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -223,6 +231,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HWX-wn-bmY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3208.6956521739135" y="133.92857142857142"/>
+        </scene>
+        <!--Swipe GestureVC-->
+        <scene sceneID="cwy-gj-rki">
+            <objects>
+                <viewController storyboardIdentifier="SwipeGestureVC" id="F7p-KY-pwB" customClass="SwipeGestureVC" customModule="GestureRecognizersDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="68u-Lh-hQB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe In any direction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzW-ar-a4t">
+                                <rect key="frame" x="123" y="437.5" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lzW-ar-a4t" firstAttribute="centerX" secondItem="68u-Lh-hQB" secondAttribute="centerX" id="adV-9Q-Jj9"/>
+                            <constraint firstItem="lzW-ar-a4t" firstAttribute="centerY" secondItem="68u-Lh-hQB" secondAttribute="centerY" id="mp9-JK-rOG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rby-rn-oqg"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelDirection" destination="lzW-ar-a4t" id="ph7-nC-1Ij"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S5Q-Z6-bxm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3891" y="141"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nLj-Qs-Xpf">
