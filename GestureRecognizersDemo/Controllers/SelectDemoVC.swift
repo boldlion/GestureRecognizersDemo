@@ -35,4 +35,9 @@ class SelectDemoVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func longPressGestureTapped(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(identifier: "LongPressGestureVC") as! LongPressGestureVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

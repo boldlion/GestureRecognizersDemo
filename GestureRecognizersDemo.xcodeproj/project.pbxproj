@@ -17,6 +17,7 @@
 		261A793E2358A253009A5F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261A793D2358A253009A5F9F /* Assets.xcassets */; };
 		261A79412358A253009A5F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261A793F2358A253009A5F9F /* LaunchScreen.storyboard */; };
 		26453820235B1CD900FFAFCA /* SwipeGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2645381F235B1CD900FFAFCA /* SwipeGestureVC.swift */; };
+		26453822235B259900FFAFCA /* LongPressGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26453821235B259900FFAFCA /* LongPressGestureVC.swift */; };
 		26546170235B081A005047B1 /* PanGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2654616F235B081A005047B1 /* PanGestureVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		261A79402358A253009A5F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		261A79422358A253009A5F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2645381F235B1CD900FFAFCA /* SwipeGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureVC.swift; sourceTree = "<group>"; };
+		26453821235B259900FFAFCA /* LongPressGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureVC.swift; sourceTree = "<group>"; };
 		2654616F235B081A005047B1 /* PanGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +58,7 @@
 				03ACED6A2359E3F9008277A6 /* RotationGestureVC.swift */,
 				2654616F235B081A005047B1 /* PanGestureVC.swift */,
 				2645381F235B1CD900FFAFCA /* SwipeGestureVC.swift */,
+				26453821235B259900FFAFCA /* LongPressGestureVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				03ACED6B2359E3F9008277A6 /* RotationGestureVC.swift in Sources */,
 				03F968612358AF3200738DB6 /* SelectDemoVC.swift in Sources */,
 				26546170235B081A005047B1 /* PanGestureVC.swift in Sources */,
+				26453822235B259900FFAFCA /* LongPressGestureVC.swift in Sources */,
 				26453820235B1CD900FFAFCA /* SwipeGestureVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

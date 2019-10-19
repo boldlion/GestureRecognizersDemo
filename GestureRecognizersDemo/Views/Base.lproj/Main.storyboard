@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="GHt-6Y-IuJ">
-                                <rect key="frame" x="87" y="263" width="240" height="370"/>
+                                <rect key="frame" x="78.5" y="221" width="257" height="454"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUL-u0-MFj">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="257" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="UITapGestureRecognizer"/>
                                         <connections>
@@ -27,7 +27,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhN-lE-6wq">
-                                        <rect key="frame" x="0.0" y="84" width="240" height="34"/>
+                                        <rect key="frame" x="0.0" y="84" width="257" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="UIPinchGestureRecognizer"/>
                                         <connections>
@@ -35,7 +35,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KL-Rr-1Os">
-                                        <rect key="frame" x="0.0" y="168" width="240" height="34"/>
+                                        <rect key="frame" x="0.0" y="168" width="257" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="UIRotationGestureRecognizer"/>
                                         <connections>
@@ -43,7 +43,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbn-hN-Hjg">
-                                        <rect key="frame" x="0.0" y="252" width="240" height="34"/>
+                                        <rect key="frame" x="0.0" y="252" width="257" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="UIPanGestureRecognizer"/>
                                         <connections>
@@ -51,11 +51,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLt-pi-cQj">
-                                        <rect key="frame" x="0.0" y="336" width="240" height="34"/>
+                                        <rect key="frame" x="0.0" y="336" width="257" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="UISwipeGestureRecognizer"/>
                                         <connections>
                                             <action selector="swipeGestureDemo:" destination="6gZ-3q-oAh" eventType="touchUpInside" id="T0B-mt-7sS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAU-fx-eln">
+                                        <rect key="frame" x="0.0" y="420" width="257" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="UILongPressGestureRecognizer"/>
+                                        <connections>
+                                            <action selector="longPressGestureTapped:" destination="6gZ-3q-oAh" eventType="touchUpInside" id="rPM-be-6ZN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -261,6 +269,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S5Q-Z6-bxm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3891" y="141"/>
+        </scene>
+        <!--Long Press GestureVC-->
+        <scene sceneID="ovc-ce-Yex">
+            <objects>
+                <viewController storyboardIdentifier="LongPressGestureVC" id="Gv2-gk-CFA" customClass="LongPressGestureVC" customModule="GestureRecognizersDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6z0-Yj-1ih">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perform Long Press to change the background color of the view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1D2-Vf-pBM">
+                                <rect key="frame" x="50" y="426.5" width="314" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u9M-Vh-1Ak" firstAttribute="trailing" secondItem="1D2-Vf-pBM" secondAttribute="trailing" constant="50" id="9ku-oL-o71"/>
+                            <constraint firstItem="1D2-Vf-pBM" firstAttribute="centerY" secondItem="6z0-Yj-1ih" secondAttribute="centerY" id="Mrx-Fs-fPc"/>
+                            <constraint firstItem="1D2-Vf-pBM" firstAttribute="leading" secondItem="u9M-Vh-1Ak" secondAttribute="leading" constant="50" id="wnL-U2-1LF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u9M-Vh-1Ak"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crg-Zj-DhI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4618.840579710145" y="153.34821428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nLj-Qs-Xpf">
