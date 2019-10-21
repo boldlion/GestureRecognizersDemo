@@ -18,6 +18,7 @@
 		261A79412358A253009A5F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261A793F2358A253009A5F9F /* LaunchScreen.storyboard */; };
 		26453820235B1CD900FFAFCA /* SwipeGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2645381F235B1CD900FFAFCA /* SwipeGestureVC.swift */; };
 		26453822235B259900FFAFCA /* LongPressGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26453821235B259900FFAFCA /* LongPressGestureVC.swift */; };
+		26453824235B44CA00FFAFCA /* ScreenEdgeGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26453823235B44CA00FFAFCA /* ScreenEdgeGestureVC.swift */; };
 		26546170235B081A005047B1 /* PanGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2654616F235B081A005047B1 /* PanGestureVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		261A79422358A253009A5F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2645381F235B1CD900FFAFCA /* SwipeGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureVC.swift; sourceTree = "<group>"; };
 		26453821235B259900FFAFCA /* LongPressGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureVC.swift; sourceTree = "<group>"; };
+		26453823235B44CA00FFAFCA /* ScreenEdgeGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenEdgeGestureVC.swift; sourceTree = "<group>"; };
 		2654616F235B081A005047B1 /* PanGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +61,7 @@
 				2654616F235B081A005047B1 /* PanGestureVC.swift */,
 				2645381F235B1CD900FFAFCA /* SwipeGestureVC.swift */,
 				26453821235B259900FFAFCA /* LongPressGestureVC.swift */,
+				26453823235B44CA00FFAFCA /* ScreenEdgeGestureVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				261A79392358A252009A5F9F /* TapGestureVC.swift in Sources */,
 				261A79352358A252009A5F9F /* AppDelegate.swift in Sources */,
 				03F968632358B2BC00738DB6 /* PinchGestureVC.swift in Sources */,
+				26453824235B44CA00FFAFCA /* ScreenEdgeGestureVC.swift in Sources */,
 				261A79372358A252009A5F9F /* SceneDelegate.swift in Sources */,
 				03ACED6B2359E3F9008277A6 /* RotationGestureVC.swift in Sources */,
 				03F968612358AF3200738DB6 /* SelectDemoVC.swift in Sources */,

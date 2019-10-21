@@ -40,4 +40,9 @@ class SelectDemoVC: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func screenEdgeGestureTapped(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(identifier: "ScreenEdgeGestureVC") as! ScreenEdgeGestureVC
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
